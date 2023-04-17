@@ -1,9 +1,5 @@
-import dataBase from "../../sample.json";
-
-//TODO: muestra un popup con la informacion de la pelicula/serie
-function popUp(params) {
-    return 1;
-}
+import dataBase from "../../../sample.json";
+import "./listado.css";
 
 const Listado = ({programType}) => {
     const list = dataBase.entries.filter(entry=>(entry.programType===programType&&entry.releaseYear>=2010));
@@ -13,18 +9,20 @@ const Listado = ({programType}) => {
         }
      });
 
-    const item = listOrdered.map((itemFromList)=>{
+    const item = listOrdered.slice(0,20).map((itemFromList)=>{   
         return (
-            <div onClick={popUp(item)}>
+            <div className="card">
                 <img src={itemFromList.images["Poster Art"].url} alt={itemFromList.title}/>
                 <p>{itemFromList.title}</p>
             </div>
         )
     })
-
+    console.log(item);
     return (
-        <div>
-             {item}
+        <div className="container">
+            <div>
+                {item}
+            </div>
         </div>
     );
   };
