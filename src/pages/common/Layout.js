@@ -1,23 +1,20 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet,Link } from "react-router-dom";
 
 const Layout = () => {
   return (
     <>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/pelis">Peliculas</Link>
-          </li>
-          <li>
-            <Link to="/series">Series</Link>
-          </li>
-        </ul>
-      </nav>
+        <h1>DEMO Streaming</h1>
 
-      <Outlet />
+        <p>Log in</p>
+        <button>Start your free trial</button>
+
+      </nav>
+        <div><Link to="/">Home</Link> </div>
+        <div><Link to="/pelis">Peliculas</Link></div>
+        <div><Link to="/series">Series</Link></div>
+        <Outlet />
+            
     </>
   )
 };
