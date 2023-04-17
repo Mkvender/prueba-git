@@ -14,7 +14,7 @@ const Layout = () => {
         <div><Link to="/pelis">Peliculas</Link></div>
         <div><Link to="/series">Series</Link></div>
         <Outlet />
-            
+        <footer>Footer</footer>
     </>
   )
 };
