@@ -1,7 +1,9 @@
+import "./header.css";
+
 const Header = () => {
     return (
       <>
-        <nav>
+        <nav className="navbar navbar-dark bg-primary">
           <h1>DEMO Streaming</h1>
   
           <p>Log in</p>

@@ -1,4 +1,4 @@
-import Listado from "../common/Listado";
+import Listado from "../common/Listado/Listado";
 const Series = () => {
     return (
     <div>
