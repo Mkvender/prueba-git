@@ -1,5 +1,9 @@
 const Pelis = () => {
-    return <h1>Pelis</h1>;
+    return (
+        <div>
+            <h2>Popular Movies</h2>
+        </div>
+    );
   };
   
   export default Pelis;

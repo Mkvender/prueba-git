@@ -1,20 +1,13 @@
-import { Outlet,Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Header from "./header";
+import Footer from "./footer";
 
 const Layout = () => {
   return (
     <>
-      <nav>
-        <h1>DEMO Streaming</h1>
-
-        <p>Log in</p>
-        <button>Start your free trial</button>
-
-      </nav>
-        <div><Link to="/">Home</Link> </div>
-        <div><Link to="/pelis">Peliculas</Link></div>
-        <div><Link to="/series">Series</Link></div>
+        <Header/>
         <Outlet />
-        <footer>Footer</footer>
+        <Footer/>
     </>
   )
 };

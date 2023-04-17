@@ -1,6 +1,9 @@
 const Series = () => {
-    return (<div><h1>Series</h1>
-    <p>Lorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsumLorem upsum</p></div>);
+    return (
+    <div>
+        <h2>Popular Series</h2>
+    </div>
+    );
   };
   
   export default Series;
